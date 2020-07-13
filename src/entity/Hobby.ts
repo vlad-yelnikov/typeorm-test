@@ -1,5 +1,4 @@
 import { Entity, PrimaryGeneratedColumn, Column, ManyToMany, JoinTable } from 'typeorm';
-import { type } from 'os';
 import { Employee } from './Employee';
 
 @Entity()

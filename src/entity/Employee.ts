@@ -1,5 +1,4 @@
 import { Entity, PrimaryGeneratedColumn, Column, ManyToOne } from 'typeorm';
-import { type } from 'os';
 import { Company } from './Company';
 
 @Entity()
