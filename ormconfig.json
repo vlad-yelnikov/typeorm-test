@@ -6,7 +6,7 @@
    "password": "typeormtest",
    "database": "typeormtest",
    "synchronize": true,
-   "logging": true,
+   "logging": false,
    "entities": [
       "src/entity/**/*.ts"
    ],
