@@ -1,11 +1,4 @@
-import {
-  Entity,
-  PrimaryGeneratedColumn,
-  Column,
-  ManyToOne,
-  JoinColumn,
-} from 'typeorm';
-import { Company } from './Company';
+import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 
 @Entity({ name: 'employees' })
 export class Employee {
@@ -23,8 +16,4 @@ export class Employee {
 
   @Column()
   position: string;
-
-  @ManyToOne((type) => Company, (company) => company.employees)
-  @JoinColumn({ name: 'company_id' })
-  company: Company;
 }
