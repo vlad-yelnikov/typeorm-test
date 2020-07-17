@@ -27,8 +27,6 @@ export class EmployeeService {
 
   public async update(id: string, body: Employee): Promise<void> {
     await this.employeeRepository.update(id, body);
-    // const employee = await this.employeeRepository.findOne(id);
-    // await this.employeeRepository.update(employee, body);
   }
 
   public async delete(id: string): Promise<void> {

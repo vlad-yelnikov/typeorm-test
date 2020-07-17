@@ -31,7 +31,7 @@ export class EmployeeController {
 
   @Put(':id')
   public update(
-    @Param(':id') id: string,
+    @Param('id') id: string,
     @Body() body: Employee
   ): Promise<void> {
     return this.employeeService.update(id, body);
