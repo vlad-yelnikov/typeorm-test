@@ -6,17 +6,17 @@
   "password": "nest",
   "database": "nest",
   "synchronize": true,
-  "logging": false,
+  "logging": true,
   "entities": ["build/**/*.entity{.ts,.js}"],
   "migrations": [
-     "migrations/**/*.js"
+     "build/migrations/**/*.js"
  ],
   "subscribers": [
-     "subscriber/**/*.js"
+     "build/subscriber/**/*.js"
  ],
   "cli": {
-     "entitiesDir": "<entities directory>",
-     "migrationsDir": "<migrations directory>",
-     "subscribersDir": "<subscriber directory>"
+     "entitiesDir": "entities",
+     "migrationsDir": "migrations",
+     "subscribersDir": "subscribers"
   }
 }
