@@ -1,22 +1,22 @@
 {
-   "type": "postgres",
-   "host": "localhost",
-   "port": 5432,
-   "username": "typeormtest",
-   "password": "typeormtest",
-   "database": "typeormtest",
-   "synchronize": true,
-   "logging": false,
-   "entities": ["build/**/*.entity{.ts,.js}"],
-   "migrations": [
-      "migrations/**/*.js"
-  ],
-   "subscribers": [
-      "subscriber/**/*.js"
-  ],
-   "cli": {
-      "entitiesDir": "<entities directory>",
-      "migrationsDir": "<migrations directory>",
-      "subscribersDir": "<subscriber directory>"
-   }
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "nest",
+  "password": "nest",
+  "database": "nest",
+  "synchronize": true,
+  "logging": true,
+  "entities": ["build/**/*.entity{.ts,.js}"],
+  "migrations": [
+     "build/migrations/**/*.js"
+ ],
+  "subscribers": [
+     "build/subscriber/**/*.js"
+ ],
+  "cli": {
+     "entitiesDir": "entities",
+     "migrationsDir": "migrations",
+     "subscribersDir": "subscribers"
+  }
 }
